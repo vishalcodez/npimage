@@ -156,8 +156,8 @@ module.exports = class newSpotify {
    * @example setTimestamp(40000,179000)
    */
   setTimestamp(start, end) {
-    if (!start || typeof start !== "number") throw new Error("The first argument of the setTimestamp method must be a number.");
-    if (!end || typeof end !== "number") throw new Error("The first argument of the setTimestamp method must be a number.");
+    if (!start || typeof start !== "number");
+    if (!end || typeof end !== "number") ;
     this.start = start;
     this.end = end;
     return this;
@@ -180,8 +180,8 @@ module.exports = class newSpotify {
   async build() {
     if (!this.title) throw new Error("Missing 'title' parameter.");
     if (!this.artist) throw new Error("Missing 'artist' parameter.");
-    if (!this.start) throw new Error("Missing 'start' parameter.");
-    if (!this.end) throw new Error("Missing 'end' parameter.");
+    // if (!this.start) throw new Error("Missing 'start' parameter.");
+    // if (!this.end) throw new Error("Missing 'end' parameter.");
 
     if (this.font.path) GlobalFonts.registerFromPath(this.font.path, this.font.name);
 
